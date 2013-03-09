@@ -1,13 +1,7 @@
-## Laravel 4.x
+# laravel-korea.org
 
-### A Framework For Web Artisans
+[laravel-korea.org](http://laravel-korea.org) 사이트 소스입니다.
 
-[Official Documentation](http://four.laravel.com) (Under Active Development)
+laravel 프레임워크를 배우는데 도움이 되길 바랍니다. :)
 
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software license under the [MIT license](http://opensource.org/licenses/MIT)
+오류 및 요청은 [이슈](https://github.com/thisiskaden/laravel-korea/issues)에 남겨주세요.
