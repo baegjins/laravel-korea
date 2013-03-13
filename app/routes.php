@@ -23,6 +23,10 @@ Config::set('categories', array(
   'jobs'    => '구인구직'
 ));
 
+Config::set('googleAnalyticsID', 'UA-38999150-1');
+Config::set('disqusShortname', 'laravelkorea');
+
+
 // Home
 Route::get('/', function(){
     
