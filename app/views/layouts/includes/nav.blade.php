@@ -23,6 +23,9 @@
           <li {{ (Request::is('login') ? 'class="active"' : '') }}><a href="{{ URL::to('login') }}">로그인</a></li>
           @endif
         </ul>
+        <form class="navbar-form pull-right" action="{{ URL::to('search') }}">
+          <input type="text" class="span2" name="query" placeholder="검색">
+        </form>
       </div><!--/.nav-collapse -->
     </div>
   </div>

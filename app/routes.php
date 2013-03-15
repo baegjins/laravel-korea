@@ -68,6 +68,44 @@ Route::get('/docs/{page}', function($page){
   ));
 });
 
+Route::get('/search', function(){
+  $query = Input::get('query');
+
+  if($query)
+  {
+    return Redirect::to('/search/' . Input::get('query'));
+  }
+
+  return View::make('search')->with(array(
+    'posts' => false,
+    'query' => false
+  ));
+});
+
+Route::get('/search/{query?}', function($query){
+
+  $query = trim($query);
+
+  if($query)
+  {
+    $posts = Post::with('user')
+      ->where('title', 'like', '%' . $query . '%')
+      ->orWhere('content', 'like', '%' . $query . '%')
+      ->orderBy('id', 'desc')
+      ->paginate(15);
+  }
+  else
+  {
+    $posts = false;
+  }
+
+  return View::make('search')->with(array(
+    'posts' => $posts,
+    'categories' => Config::get('categories'),
+    'query' => $query
+  ));
+});
+
 
 
 
