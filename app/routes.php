@@ -13,7 +13,7 @@
 */
 
 Config::set('categories', array(
-  'new'     => '글쓰기',
+  'all'     => '전체 글',
   'notice'  => '공지사항',
   'free'    => '자유게시판',
   'tuts'    => 'Laravel 강좌게시판',

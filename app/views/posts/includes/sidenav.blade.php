@@ -1,5 +1,12 @@
 <div class="well">
   <ul class="nav nav-list">
+    <li {{ (Request::is('posts/all*') || $header == '전체 글' ? 'class="active"' : '') }}>
+      <a href="{{ URL::to('posts/all') }}">
+        <i class="icon-chevron-right"></i>
+        전체 글
+      </a>
+    </li>
+    <li class="divider"></li>
     <li {{ (Request::is('posts/notice*') || $header == '공지사항' ? 'class="active"' : '') }}>
       <a href="{{ URL::to('posts/notice') }}">
         <i class="icon-chevron-right"></i>

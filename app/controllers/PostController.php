@@ -28,7 +28,7 @@ class PostController extends BaseController {
    */
   public function getIndex()
   {
-    return Redirect::to('posts/free');
+    return Redirect::to('posts/all');
   }
   
   
@@ -82,7 +82,14 @@ class PostController extends BaseController {
    */
   public function getByCategory($category)
   {
-    $posts = Post::with('user')->where('category', $category)->orderBy('id', 'desc')->paginate(15);
+    if($category == 'all')
+    {
+      $posts = Post::with('user')->orderBy('id', 'desc')->paginate(15);
+    }
+    else
+    {
+      $posts = Post::with('user')->where('category', $category)->orderBy('id', 'desc')->paginate(15);
+    }
   
     return View::make('posts.index')->with(array(
       'posts' => $posts,
