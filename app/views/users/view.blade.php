@@ -44,7 +44,7 @@
 <h3>최신 글</h3>
 <ul>
   @foreach ($posts as $post)
-  <li><a href="{{ URL::to('posts/' . $post->id ) }}">{{ $post->title }}</a> <span class="label label-cat-{{ $post->category }}">{{ $categories[$post->category] }}</span></li>
+  <li><span class="label label-cat-{{ $post->category }}">{{ $categories[$post->category] }}</span> <a href="{{ URL::to('posts/' . $post->id ) }}">{{ $post->title }}</a></li>
   @endforeach
 </ul>
 <p><a href="{{ URL::to('users/' . $user->id . '/' . $user->username . '/posts') }}">더 보기</a></p>

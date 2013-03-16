@@ -52,7 +52,7 @@ Route::get('/docs', function(){
 });
 
 Route::get('/docs/{page}', function($page){
-  $path = '../app/views/docs/ko/' . $page . '.md';
+  $path = __DIR__ . '../app/views/docs/ko/' . $page . '.md';
   
   if(File::exists($path))
   {
@@ -103,6 +103,17 @@ Route::get('/search/{query?}', function($query){
     'posts' => $posts,
     'categories' => Config::get('categories'),
     'query' => $query
+  ));
+});
+
+Route::get('/changelog', function(){
+    
+  $path = __DIR__ . '/../changelog.md';
+  
+  $markdown = new MarkdownParser();
+  
+  return View::make('changelog')->with(array(
+    'content' => ($markdown->transformMarkdown(File::get($path)))
   ));
 });
 
