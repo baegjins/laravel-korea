@@ -32,6 +32,10 @@ body {
   background-color : #40BFAE;
   font-weight: normal;
 }
+.label-cat-packages {
+  background-color : #B040BF;
+  font-weight: normal;
+}
 .label-cat-sites {
   background-color : #BF9140;
   font-weight: normal;

@@ -37,6 +37,12 @@
         Laravel 질문게시판
       </a>
     </li>
+    <li {{ (Request::is('posts/packages') || $header == 'Laravel 패키지' ? 'class="active"' : '') }}>
+      <a href="{{ URL::to('posts/packages') }}">
+        <i class="icon-chevron-right"></i>
+        Laravel 패키지
+      </a>
+    </li>
     <li {{ (Request::is('posts/sites*') || $header == 'Laravel 사이트 소개' ? 'class="active"' : '') }}>
       <a href="{{ URL::to('posts/sites') }}">
         <i class="icon-chevron-right"></i>
