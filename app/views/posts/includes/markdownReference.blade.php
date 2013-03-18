@@ -37,8 +37,8 @@
       <td><code>inline code</code></td>
     </tr>
     <tr>
-      <td>[링크](daum.net)</td>
-      <td><p><a href="daum.net">링크</a></p></td>
+      <td>[링크](http://laravel.com)</td>
+      <td><p><a href="http://laravel.com">링크</a></p></td>
     </tr>
     <tr>
       <td>----</td>

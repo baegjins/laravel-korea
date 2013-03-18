@@ -12,30 +12,15 @@
 |
 */
 
-Config::set('categories', array(
-  'all'       => '전체 글',
-  'notice'    => '공지사항',
-  'free'      => '자유게시판',
-  'tuts'      => 'Laravel 강좌게시판',
-  'tips'      => 'Laravel 팁게시판',
-  'help'      => 'Laravel 질문게시판',
-  'packages'  => 'Laravel 패키지',
-  'sites'     => 'Laravel 사이트 소개',
-  'jobs'      => '구인구직'
-));
-
-Config::set('googleAnalyticsID', 'UA-38999150-1');
-Config::set('disqusShortname', 'laravelkorea');
-
 
 // Home
 Route::get('/', function(){
-    
+   var_dump($_SERVER); die();
   $posts = Post::orderBy('id', 'desc')->take(15)->get();
   
   return View::make('home')->with(array(
     'posts' => $posts,
-    'categories' => Config::get('categories')
+    'categories' => Config::get('site.postCategories')
   ));
   
 });
@@ -102,7 +87,7 @@ Route::get('/search/{query?}', function($query){
 
   return View::make('search')->with(array(
     'posts' => $posts,
-    'categories' => Config::get('categories'),
+    'categories' => Config::get('site.postCategories'),
     'query' => $query
   ));
 });

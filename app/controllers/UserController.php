@@ -10,6 +10,7 @@ class UserController extends BaseController {
   {
 
     $this->beforeFilter('csrf', array('on' => 'post'));
+    $this->categories = Config::get('site.postCategories');
 
   }
   
@@ -34,7 +35,7 @@ class UserController extends BaseController {
     return View::make('users.view')->with(array(
       'user'        => $user,
       'posts'       => $posts,
-      'categories'  => Config::get('categories')
+      'categories'  => $this->categories
     ));
   }
   
@@ -51,7 +52,7 @@ class UserController extends BaseController {
     return View::make('users.posts')->with(array(
       'user'        => $user,
       'posts'       => $posts,
-      'categories'  => Config::get('categories')
+      'categories'  => $this->categories
     ));
   }
   

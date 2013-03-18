@@ -36,7 +36,7 @@
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{ Config::get('googleAnalyticsID') }}']);
+      _gaq.push(['_setAccount', '{{ Config::get('site.googleAnalyticsID') }}']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -49,7 +49,7 @@
 
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = '{{ Config::get('disqusShortname') }}'; // required: replace example with your forum shortname
+      var disqus_shortname = '{{ Config::get('site.disqusShortname') }}'; // required: replace example with your forum shortname
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function () {
