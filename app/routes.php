@@ -15,7 +15,6 @@
 
 // Home
 Route::get('/', function(){
-   var_dump($_SERVER); die();
   $posts = Post::orderBy('id', 'desc')->take(15)->get();
   
   return View::make('home')->with(array(
