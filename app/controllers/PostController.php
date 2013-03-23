@@ -18,7 +18,7 @@ class PostController extends BaseController {
       )
     ));
     
-    $this->categories = Config::get('site.postcategories');
+    $this->categories = Config::get('site.postCategories');
 
   }
   
