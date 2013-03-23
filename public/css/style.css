@@ -11,6 +11,18 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+ul,
+ol{
+  list-style-position: inside;
+  margin-bottom: 15px;
+}
+p{
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+pre{
+  margin-bottom: 15px;
+}
 
 .label-cat-notice {
   background-color : #B43C6E;
@@ -58,7 +70,7 @@ body {
   border: none;
   background-color: #fff;
   padding: 0;
-  border-radius:0px;
+  border-radius:0;
   margin-bottom: 30px;
 }
 
@@ -89,6 +101,17 @@ body {
   width: 6%;
 }
 */
+
+.post-create .preview h2,
+.post-edit .preview h2,
+.post-view .content h2{
+  margin-bottom : 30px;
+}
+.post-create .preview h3,
+.post-edit .preview h3,
+.post-view .content h3{
+  margin: 20px 0 10px;
+}
 
 .post-create .preview,
 .post-edit .preview{
@@ -126,9 +149,9 @@ body {
 }
 
 .page-header-pills{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 #disqus_thread{

@@ -21,7 +21,7 @@ $(function(){
   @include('posts.includes.sidenav')
   </div>
   <div class="span9">
-    <h3 class="title">{{ $post->title }}</h3>
+    <h2 class="title">{{ $post->title }}</h2>
       <ul class="nav nav-pills">
       @if (Auth::check() && (Auth::user()->id == $post->user_id))
         <li class="pull-right"><a href="{{ URL::to('posts/' . $post->id . '/delete') }}"><i class="icon-trash"></i> 삭제</a></li>
