@@ -37,7 +37,7 @@ Route::get('/docs', function(){
 });
 
 Route::get('/docs/{page}', function($page){
-  $path = __DIR__ . '../app/views/docs/ko/' . $page . '.md';
+  $path = __DIR__ . '/../app/views/docs/ko/' . $page . '.md';
   
   if(File::exists($path))
   {
