@@ -47,6 +47,7 @@
               <li class="nav-header">더 배우기(Learning More)</li>
               <li {{ Request::is('docs/cache') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/cache') }}"><i class="icon-ok pull-right"></i>캐싱(Cache)</a></li>
               <li {{ Request::is('docs/events') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/events') }}"><i class="icon-ok pull-right"></i>이벤트(Events)</a></li>
+              <li {{ Request::is('docs/html') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/html') }}">폼 &amp; HTML</a></li>
               <li {{ Request::is('docs/ioc') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/ioc') }}">IoC 컨테이너(IoC Container)</a></li>
               <li {{ Request::is('docs/localization') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/localization') }}"><i class="icon-ok pull-right"></i>지역화(Localization)</a></li>
               <li {{ Request::is('docs/mail') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/mail') }}"><i class="icon-ok pull-right"></i>메일(Mail)</a></li>
@@ -68,14 +69,12 @@
               <li class="nav-header">아티즌 CLI(Artisan CLI)</li>
               <li {{ Request::is('docs/artisan') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/artisan') }}"><i class="icon-ok pull-right"></i>개요(Overview)</a></li>
               <li {{ Request::is('docs/commands') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/commands') }}"><i class="icon-ok pull-right"></i>개발(Development)</a></li>
-              <li class="nav-header">고급 주제(Advanced Topics)</li>
-              <li {{ Request::is('docs/architecture') ? 'class="active"' : '' }}><a href="#">구조(Architecture)</a></li>
             </ul>
           </div>
         </div>
         <div class="span9 section">
           <p class="well">
-            문법오류나 오역, 오타를 <a href="https://github.com/thisiskaden/laravel4-docs-korean/issues">이슈</a>에 남겨주시면 확인후 업데이트 하겠습니다. 
+            문법오류나 오역, 오타를 <a href="https://github.com/thisiskaden/laravel4-docs-korean/issues">이슈</a>에 남겨주시거나 해당 페이지에 코멘트를 달아주시면 확인 후 업데이트 하겠습니다. 
           </p>
           @yield('content')
         </div>
