@@ -47,7 +47,7 @@
               <li class="nav-header">더 배우기(Learning More)</li>
               <li {{ Request::is('docs/cache') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/cache') }}"><i class="icon-ok pull-right"></i>캐싱(Cache)</a></li>
               <li {{ Request::is('docs/events') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/events') }}"><i class="icon-ok pull-right"></i>이벤트(Events)</a></li>
-              <li {{ Request::is('docs/html') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/html') }}">폼 &amp; HTML</a></li>
+              <li {{ Request::is('docs/html') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/html') }}"><i class="icon-ok pull-right"></i>폼 &amp; HTML</a></li>
               <li {{ Request::is('docs/ioc') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/ioc') }}">IoC 컨테이너(IoC Container)</a></li>
               <li {{ Request::is('docs/localization') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/localization') }}"><i class="icon-ok pull-right"></i>지역화(Localization)</a></li>
               <li {{ Request::is('docs/mail') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/mail') }}"><i class="icon-ok pull-right"></i>메일(Mail)</a></li>
