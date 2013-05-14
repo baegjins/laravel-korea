@@ -21,7 +21,7 @@
 
 <div class="row user-view">
   <div class="span6">
-    <img class="user-img img-polaroid" src="http://www.gravatar.com/avatar/{{ md5( strtolower( trim( ' . $user->email . ' ) ) ) }}?d=mm&s=120" />
+    <img class="user-img img-polaroid" src="http://www.gravatar.com/avatar/{{ md5( strtolower( trim($user->email) ) ) }}?d=mm&s=120" />
     <dl class="user-info">
       <dt>아이디</dt>
       <dd>{{ $user->username }}</dd>
