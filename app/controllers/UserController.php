@@ -19,7 +19,7 @@ class UserController extends BaseController {
    */
   public function getIndex()
   {
-    $users = User::orderBy('id')->paginate(16);
+    $users = User::orderBy('id', 'desc')->paginate(16);
     return View::make('users.index')->with('header', '사용자')->with('users', $users);
   }
   
