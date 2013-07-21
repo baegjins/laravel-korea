@@ -51,7 +51,7 @@
               <li {{ Request::is('docs/facades') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/facades') }}">파사드(Facades)</a></li>
               <li {{ Request::is('docs/html') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/html') }}"><i class="icon-ok pull-right"></i>폼 &amp; HTML</a></li>
               <li {{ Request::is('docs/helpers') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/helpers') }}">헬퍼(Helpers)</a></li>
-              <li {{ Request::is('docs/ioc') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/ioc') }}">IoC 컨테이너(IoC Container)</a></li>
+              <li {{ Request::is('docs/ioc') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/ioc') }}"><i class="icon-ok pull-right"></i>IoC 컨테이너(IoC Container)</a></li>
               <li {{ Request::is('docs/localization') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/localization') }}"><i class="icon-ok pull-right"></i>지역화(Localization)</a></li>
               <li {{ Request::is('docs/mail') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/mail') }}"><i class="icon-ok pull-right"></i>메일(Mail)</a></li>
               <li {{ Request::is('docs/packages') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/packages') }}"><i class="icon-ok pull-right"></i>패키지 개발(Package Development)</a></li>
