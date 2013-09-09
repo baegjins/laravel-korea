@@ -34,7 +34,7 @@
             <ul class="nav nav-list">
               <li class="nav-header">머리말(Predface)</li>
               <li {{ Request::is('docs/introduction') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/introduction') }}"><i class="icon-ok pull-right"></i>소개(Introduction)</a></li>
-              <li {{ Request::is('docs/quick') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/quick') }}">빠른시작(Quickstart)</a></li>
+              <li {{ Request::is('docs/quick') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/quick') }}"><i class="icon-ok pull-right"></i>빠른시작(Quickstart)</a></li>
               <li {{ Request::is('docs/contributing') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/contributing') }}"><i class="icon-ok pull-right"></i>기여(contributing)</a></li>
               <li class="nav-header">시작하기(Getting Started)</li>
               <li {{ Request::is('docs/installation') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/installation') }}"><i class="icon-ok pull-right"></i>설치(Installation)</a></li>
@@ -48,7 +48,7 @@
               <li class="nav-header">더 배우기(Learning More)</li>
               <li {{ Request::is('docs/cache') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/cache') }}"><i class="icon-ok pull-right"></i>캐싱(Cache)</a></li>
               <li {{ Request::is('docs/events') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/events') }}"><i class="icon-ok pull-right"></i>이벤트(Events)</a></li>
-              <li {{ Request::is('docs/facades') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/facades') }}">파사드(Facades)</a></li>
+              <li {{ Request::is('docs/facades') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/facades') }}"><i class="icon-ok pull-right"></i>파사드(Facades)</a></li>
               <li {{ Request::is('docs/html') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/html') }}"><i class="icon-ok pull-right"></i>폼 &amp; HTML</a></li>
               <li {{ Request::is('docs/helpers') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/helpers') }}">헬퍼(Helpers)</a></li>
               <li {{ Request::is('docs/ioc') ? 'class="active"' : '' }}><a href="{{ URL::to('docs/ioc') }}"><i class="icon-ok pull-right"></i>IoC 컨테이너(IoC Container)</a></li>
